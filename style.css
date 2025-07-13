@@ -36,7 +36,20 @@ body {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #fff;
+  display: block;
+}
+
+.profile-pic-glass {
+  width: 130px;
+  height: 130px;
+  padding: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-text h1 {
@@ -62,30 +75,51 @@ body {
 }
 
 .btn {
-  padding: 0.6rem 1.2rem;
-  background-color: rgba(82, 72, 117, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px; /* Match height of icon buttons */
+  padding: 0 1.2rem; /* Horizontal only now */
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   text-decoration: none;
   border-radius: 6px;
   transition: background 0.3s;
   font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .btn:hover {
-  background-color: rgba(68, 53, 122, 0.7);;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.01);
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1); /* optional frosty look */
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  transition: opacity 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .icon-link .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   filter: brightness(0) invert(1);
-  opacity: 0.8;
-  transition: opacity 0.3s;
+  opacity: 0.85;
 }
 
-.icon-link .icon:hover {
-  opacity: 1;
-}
 
 .about-box {
   max-width: 90%;
@@ -120,10 +154,9 @@ body {
 .vertical-divider {
   width: 4px;
   height: 60px;
-  background: rgba(255, 255, 255, 0.1); /* translucent */
-  backdrop-filter: blur(6px);           /* frosted glass */
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(6px);           
   border-radius: 10px;
   margin: 2rem 0;
-  /* box-shadow: 0 0 8px rgba(255, 255, 255, 0.1); */
 }
 
