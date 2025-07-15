@@ -188,6 +188,12 @@ body {
   margin-right: auto;
 }
 
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
 .project-info {
   flex: 1 1 300px;
   color: #ddd;
@@ -222,4 +228,24 @@ body {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-info, .project-image {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .project-info {
+    margin-right: 0;
+  }
 }
