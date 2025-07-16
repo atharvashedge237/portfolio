@@ -232,7 +232,7 @@ body {
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 @media (max-width: 768px) {
@@ -280,3 +280,28 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+.contact-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.email-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
